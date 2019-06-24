@@ -13,7 +13,7 @@ global laneareaSubscriptionResults
 if isempty(laneareaSubscriptionResults)
     ReturnValueFunc = traci.RETURN_VALUE_FUNC.lanearea;
 else
-    ReturnValueFunc = aeralSubscriptionResults.valueFunc;
+    ReturnValueFunc = laneareaSubscriptionResults.valueFunc;
 end
 
 % Prepare the outgoing message and read the response. The result variable
